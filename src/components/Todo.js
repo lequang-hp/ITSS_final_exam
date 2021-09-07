@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+// import { useState }  from 'react';
 /* 
   【Todoのデータ構成】
 　・key：Todoを特定するID（String）
@@ -29,7 +29,7 @@ function Todo() {
   // ]);
   
   const [filter, setFilter] = React.useState('ALL');
-
+  // eslint-disable-next-line
   const displayItems = items.filter(item => {
     if (filter === 'ALL') return true;
     if (filter === 'TODO') return !item.done;
